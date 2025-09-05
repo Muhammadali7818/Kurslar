@@ -1,6 +1,6 @@
 import React from "react";
 import { sidebarLinks } from "../contact";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -8,7 +8,7 @@ function Sidebar() {
       <p className="text-sm pt-2 pl-2 font-mono text-gray-400">Sahifalar</p>
       <div>
 {sidebarLinks.map((item, idx) => (
-  <NavLink to={item.href} 
+  <Link to={item.href} 
     key={idx}
     className="flex items-center gap-4 mb-4 mt-2 hover:bg-slate-500 px-4 py-4 w-[90%] mx-auto rounded-md"
   >
@@ -23,7 +23,7 @@ function Sidebar() {
       <item.icon className="w-[30px] h-[30px] ml-2 " />
     )}
     <h1 className="text-2xl font-bold">{item.text}</h1>
-  </NavLink>
+  </Link>
 ))}
 
       </div>

@@ -32,12 +32,9 @@ function Foundation() {
                 <p className="flex items-center justify-center gap-2">
                   <MdOutlineDateRange /> 2025, 11-Mart
                 </p>
-                <p className="flex items-center justify-center gap-2">
-                  <IoIosList /> 47 darslar soni
-                </p>
               </div>
               <div className="flex gap-7 text-xl">
-                <p>Davomiylik: 12 soat 55 daqiqa</p>
+                <p>Davomiylik: 12 soat </p>
                 <div className="rating ">
                   <input
                     type="radio"

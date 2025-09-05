@@ -1,8 +1,9 @@
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import { projects } from "../contact";
 
 function Loyihalar() {
   return (
@@ -19,130 +20,16 @@ function Loyihalar() {
               </p>
             </h1>
             <div className="grid grid-cols-3 gap-5">
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/MERN Stack - Telegram clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">
-                  MERN Stack - Telegram clone
-                </h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Next.js - X clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Next.js - X clone</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Next.js - Drive clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Next.js - Drive clone</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Nux.js - Jira clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Nux.js - Jira clone</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Next-js - Notion clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Next.js - Notion clone</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/React Navite - Netflix clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">
-                  React Navite - Netflix clone
-                </h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Next.js - E-Commerce.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Next.js - E-Commerce</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/React Navite - hh clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">React Navite - hh clone</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/React Navite - Netflix clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">
-                  React Navite - Netflix clone
-                </h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/React Navite - Kinoteatr.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">React Navite - Kinoteatr</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/HTML CSS JS - Paint clone.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">
-                  HTML CSS JS - Paint clone
-                </h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Node.js Telegram bot.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Node.js Telegram bot</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/React.js - Sammitube.png"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">React.js - Sammitube</h1>
-              </div>
-              <div className="card w-[97%] border-2  border-gray-600 h-[250px]">
-                <img
-                  src="/public/Next.js - Blog.pnb.webp"
-                  className="bg-white w-full h-[80%] rounded-t-lg"
-                  alt=""
-                />
-                <h1 className="text-2xl ml-5 mt-2">Next.js - Blog</h1>
-              </div>
-            </div>
+                {projects.map((item,idx)=>(
+                      <Link to={item.links} key={idx} className='border-2 border-gray-600 rounded-lg pb-2 w-[340px] h-[250px]'>
+                         <img src={item.img} className='w-full rounded-lg h-[208px]' alt={item.text} />
+                         <h2 className=' p-2 pb-0 text-xl font-bold font-mono'>{item.text}</h2> 
+                      </Link>
+                    ))
+                    }
+</div>
           </div>
 
-          <br />
         </div>
       </div>
     </div>
