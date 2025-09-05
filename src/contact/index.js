@@ -111,25 +111,25 @@ export const projects = [
     id:1,
     text:"MERN Stack - Telegram clone",
     links:"/projects/telegram-clone",
-    img:'/MERN Stack - Telegram clone.png'
+    img:"/MERN Stack - Telegram clone.png"
   }, 
   {
     id:2,
     text:'Next.js - X clone',
     links: "/projects/x-clone",
-    img:'/Next.js - X clone.png'
+    img:"/Next.js - X clone.png"
   },
   {
     id:3,
     text:"Next.js - Drive clone",
     links:'/projects/google-drive',
-    img:'/public/Next.js - Drive clone.png',
+    img:"/Next.js - Drive clone.png",
   },
   {
     id:4,
     text:"Nuxt.js - Jira clone",
     links:'/projects/jira-clone',
-    img:'/Nux.js - Jira clone.png'
+    img:"/Nux.js - Jira clone.png"
   },
   {
     id:5,
@@ -141,6 +141,6 @@ export const projects = [
     id:6,
     text:"Next.js - Netflix clone",
     links:'/projects/netflix-web',
-    img:'/React Navite - Kinoteatr.png',
+    img:"/React Navite - Kinoteatr.png",
   }
 ]
