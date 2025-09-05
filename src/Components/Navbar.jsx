@@ -45,7 +45,7 @@ function Navbar() {
       <div className="backdrop-blur-lg w-full md:w-[1228px] h-16 md:h-[16%] rounded-md border border-gray-500 fixed top-3 left-1/2 transform -translate-x-1/2 md:ml-[19.2%] md:left-0 md:transform-none flex items-center justify-between px-4 md:px-0 z-50 bg-base-100 bg-opacity-90">
         <div className="flex gap-2 items-center justify-center">
           <NavLink to={"/"} className="text-5xl pl-2 font-mono">
-            <img src="/public/ValiTech.png" className="w-40 md:w-[250px] h-12 md:h-[80px]" alt="ValiTech Logo" />
+            <img src="/ValiTech.png" className="w-40 md:w-[250px] h-12 md:h-[80px]" alt="ValiTech Logo" />
           </NavLink>
         </div>
         

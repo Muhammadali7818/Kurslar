@@ -141,6 +141,6 @@ export const projects = [
     id:6,
     text:"Next.js - Netflix clone",
     links:'/projects/netflix-web',
-    img:'/public/React Navite - Kinoteatr.png',
+    img:'/React Navite - Kinoteatr.png',
   }
 ]

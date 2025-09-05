@@ -48,7 +48,7 @@ function Home() {
               </NavLink>
             </div>
           </div>
-          <img src="/public/Vali Teach.png" className=" rounded-full w-[25%] h-[85%]" alt="" />
+          <img src="/Vali Teach.png" className=" rounded-full w-[25%] h-[85%]" alt="" />
         </div>
         <div className="flex flex-col gap-5 w-full">
           <Link to={'/courses'} className="text-3xl flex items-center  gap-3 font-mono">Kurslar <p className="text-blue-700"><FaChevronRight /></p></Link>
