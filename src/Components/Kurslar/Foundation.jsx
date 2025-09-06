@@ -67,7 +67,7 @@ function Foundation() {
             </div>
           </div>
           <img
-            src="/public/Foundation.png"
+            src="/Foundation.png"
             className="w-[37%] h-[80%] rounded-lg"
             alt=""
           />
